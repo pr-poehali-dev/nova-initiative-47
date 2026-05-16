@@ -160,7 +160,7 @@ export default function Index() {
       </div>
 
       <nav
-        className={`fixed left-0 right-0 top-0 z-50 flex items-center justify-between px-6 py-6 transition-opacity duration-700 md:px-12 ${
+        className={`fixed left-0 right-0 top-0 z-50 flex items-center justify-between px-4 py-3 transition-opacity duration-700 md:px-12 md:py-4 ${
           isLoaded ? "opacity-100" : "opacity-0"
         }`}
       >
@@ -171,7 +171,7 @@ export default function Index() {
           <img
             src="https://cdn.poehali.dev/projects/01787a70-ed5e-47d1-adbf-a9ba119d1d70/bucket/3708482a-a3c0-4832-af00-03eb3b63908e.png"
             alt="Аддэре винум"
-            className="h-20 w-20 object-contain drop-shadow-md"
+            className="h-14 w-14 object-contain drop-shadow-md md:h-16 md:w-16"
           />
         </button>
 
@@ -208,7 +208,7 @@ export default function Index() {
         style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
       >
         {/* Hero Section */}
-        <section className="flex min-h-screen w-screen shrink-0 flex-col justify-end px-6 pb-16 pt-36 md:px-12 md:pb-24 md:pt-40">
+        <section className="flex min-h-screen w-screen shrink-0 flex-col justify-end px-6 pb-12 pt-28 md:px-12 md:pb-20 md:pt-32">
           <div className="max-w-3xl">
             <div className="mb-4 inline-block animate-in fade-in slide-in-from-bottom-4 rounded-full border border-foreground/20 bg-foreground/15 px-4 py-1.5 backdrop-blur-md duration-700">
               <p className="font-mono text-xs text-foreground/90">Инновации в сохранении вина</p>
