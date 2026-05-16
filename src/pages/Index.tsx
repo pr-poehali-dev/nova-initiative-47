@@ -182,27 +182,27 @@ export default function Index() {
       >
         <Shader className="h-full w-full">
           <Swirl
-            colorA="#6b1a2e"
-            colorB="#c8922a"
-            speed={0.5}
-            detail={0.7}
-            blend={55}
-            coarseX={35}
-            coarseY={35}
-            mediumX={40}
-            mediumY={40}
-            fineX={45}
-            fineY={45}
+            colorA="#8B1A1A"
+            colorB="#C4788A"
+            speed={0.45}
+            detail={0.65}
+            blend={60}
+            coarseX={38}
+            coarseY={38}
+            mediumX={42}
+            mediumY={42}
+            fineX={40}
+            fineY={40}
           />
           <ChromaFlow
-            baseColor="#4a0e1e"
-            upColor="#8b1a32"
-            downColor="#1a0a0f"
-            leftColor="#c8922a"
-            rightColor="#d4a843"
-            intensity={0.85}
-            radius={1.6}
-            momentum={20}
+            baseColor="#5C1010"
+            upColor="#8B1A1A"
+            downColor="#1a0808"
+            leftColor="#C4788A"
+            rightColor="#E8B4C0"
+            intensity={0.82}
+            radius={1.7}
+            momentum={18}
             maskType="alpha"
             opacity={0.96}
           />
@@ -219,10 +219,11 @@ export default function Index() {
           onClick={() => scrollToSection(0)}
           className="flex items-center gap-2 transition-transform hover:scale-105"
         >
-          <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-foreground/15 backdrop-blur-md transition-all duration-300 hover:scale-110 hover:bg-foreground/25">
-            <span className="font-sans text-xl font-bold text-foreground">A</span>
-          </div>
-          <span className="font-sans text-xl font-semibold tracking-tight text-foreground">Аддэре винум</span>
+          <img
+            src="https://cdn.poehali.dev/projects/01787a70-ed5e-47d1-adbf-a9ba119d1d70/bucket/3708482a-a3c0-4832-af00-03eb3b63908e.png"
+            alt="Аддэре винум"
+            className="h-12 w-12 object-contain drop-shadow-md"
+          />
         </button>
 
         <div className="hidden items-center gap-8 md:flex">
