@@ -26,14 +26,14 @@ export function WorkSection() {
               number: "01",
               title: "Баллоны для Coravin",
               category: "Многоразовые картриджи · В продаже",
-              year: "2024",
+              year: "2025",
               direction: "left",
             },
             {
               number: "02",
               title: "Система сохранения вина",
               category: "Собственное устройство · Прототип",
-              year: "2025",
+              year: "2026",
               direction: "right",
             },
             {
