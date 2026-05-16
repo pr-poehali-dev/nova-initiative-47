@@ -31,7 +31,7 @@ export function WorkSection() {
             },
             {
               number: "02",
-              title: "Система сохранения вина",
+              title: "Собственная система сохранения Adderum",
               category: "Собственное устройство · Прототип",
               year: "2026",
               direction: "right",
