@@ -31,6 +31,14 @@ export function ServicesSection() {
             <ServiceCard key={i} service={service} index={i} isVisible={isVisible} />
           ))}
         </div>
+
+        <p
+          className={`mt-12 font-mono text-xs text-foreground/40 transition-all duration-700 delay-300 md:mt-16 ${
+            isVisible ? "translate-y-0 opacity-100" : "translate-y-4 opacity-0"
+          }`}
+        >
+          Все решения разработаны под требования пищевой индустрии, профессиональных сомелье и ценителей вина.
+        </p>
       </div>
     </section>
   )
