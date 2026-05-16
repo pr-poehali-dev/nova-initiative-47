@@ -245,6 +245,16 @@ export default function Index() {
               </div>
             </div>
           </div>
+
+          <div className="absolute bottom-8 right-6 animate-in fade-in duration-1000 delay-500 md:right-12">
+            <a href="https://sk.ru" target="_blank" rel="noopener noreferrer">
+              <img
+                src="https://cdn.poehali.dev/projects/01787a70-ed5e-47d1-adbf-a9ba119d1d70/bucket/26f2f063-b168-4603-b9ae-23b170289f8b.png"
+                alt="Sk Участник"
+                className="h-8 w-auto object-contain opacity-80 transition-opacity hover:opacity-100 md:h-10"
+              />
+            </a>
+          </div>
         </section>
 
         <WorkSection />
