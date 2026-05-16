@@ -46,7 +46,7 @@ export function AboutSection({ scrollToSection }: { scrollToSection?: (index: nu
           <div className="flex flex-col justify-center space-y-6 md:space-y-12">
             {[
               { value: "3", label: "Направления", sublabel: "Картриджи, система, диспенсеры", direction: "right" },
-              { value: "−70%", label: "Экономия", sublabel: "На расходных материалах", direction: "left" },
+              { value: "−90%", label: "Экономия", sublabel: "На расходных материалах", direction: "left" },
               { value: "HoReCa", label: "Аудитория", sublabel: "Рестораны, бары, сомелье", direction: "right" },
             ].map((stat, i) => {
               const getRevealClass = () => {
