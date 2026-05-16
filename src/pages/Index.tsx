@@ -1,4 +1,3 @@
-import { CustomCursor } from "@/components/custom-cursor"
 import { GrainOverlay } from "@/components/grain-overlay"
 import { WorkSection } from "@/components/sections/work-section"
 import { ServicesSection } from "@/components/sections/services-section"
@@ -145,7 +144,6 @@ export default function Index() {
 
   return (
     <main className="relative h-screen w-full overflow-hidden bg-background">
-      <CustomCursor />
       <GrainOverlay />
 
       <div
