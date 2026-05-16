@@ -208,7 +208,7 @@ export default function Index() {
         style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
       >
         {/* Hero Section */}
-        <section className="flex min-h-screen w-screen shrink-0 flex-col justify-end px-6 pb-12 pt-28 md:px-12 md:pb-20 md:pt-32">
+        <section className="flex min-h-screen w-screen shrink-0 flex-col justify-center px-6 pb-12 pt-28 md:px-12 md:pb-20 md:pt-32">
           <div className="max-w-3xl">
             <div className="mb-4 inline-block animate-in fade-in slide-in-from-bottom-4 rounded-full border border-foreground/20 bg-foreground/15 px-4 py-1.5 backdrop-blur-md duration-700">
               <p className="font-mono text-xs text-foreground/90">Инновации в сохранении вина</p>
