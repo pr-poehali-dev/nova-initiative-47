@@ -1,4 +1,3 @@
-import { Shader, ChromaFlow, Swirl } from "shaders/react"
 import { CustomCursor } from "@/components/custom-cursor"
 import { GrainOverlay } from "@/components/grain-overlay"
 import { WorkSection } from "@/components/sections/work-section"
@@ -14,37 +13,11 @@ export default function Index() {
   const [isLoaded, setIsLoaded] = useState(false)
   const touchStartY = useRef(0)
   const touchStartX = useRef(0)
-  const shaderContainerRef = useRef<HTMLDivElement>(null)
   const scrollThrottleRef = useRef<number>()
 
   useEffect(() => {
-    const checkShaderReady = () => {
-      if (shaderContainerRef.current) {
-        const canvas = shaderContainerRef.current.querySelector("canvas")
-        if (canvas && canvas.width > 0 && canvas.height > 0) {
-          setIsLoaded(true)
-          return true
-        }
-      }
-      return false
-    }
-
-    if (checkShaderReady()) return
-
-    const intervalId = setInterval(() => {
-      if (checkShaderReady()) {
-        clearInterval(intervalId)
-      }
-    }, 100)
-
-    const fallbackTimer = setTimeout(() => {
-      setIsLoaded(true)
-    }, 1500)
-
-    return () => {
-      clearInterval(intervalId)
-      clearTimeout(fallbackTimer)
-    }
+    const timer = setTimeout(() => setIsLoaded(true), 200)
+    return () => clearTimeout(timer)
   }, [])
 
   const scrollToSection = (index: number) => {
@@ -176,38 +149,14 @@ export default function Index() {
       <GrainOverlay />
 
       <div
-        ref={shaderContainerRef}
         className={`fixed inset-0 z-0 transition-opacity duration-700 ${isLoaded ? "opacity-100" : "opacity-0"}`}
-        style={{ contain: "strict" }}
       >
-        <Shader className="h-full w-full">
-          <Swirl
-            colorA="#8B1A1A"
-            colorB="#C4788A"
-            speed={0.45}
-            detail={0.65}
-            blend={60}
-            coarseX={38}
-            coarseY={38}
-            mediumX={42}
-            mediumY={42}
-            fineX={40}
-            fineY={40}
-          />
-          <ChromaFlow
-            baseColor="#5C1010"
-            upColor="#8B1A1A"
-            downColor="#1a0808"
-            leftColor="#C4788A"
-            rightColor="#E8B4C0"
-            intensity={0.82}
-            radius={1.7}
-            momentum={18}
-            maskType="alpha"
-            opacity={0.96}
-          />
-        </Shader>
-        <div className="absolute inset-0 bg-black/20" />
+        <img
+          src="https://cdn.poehali.dev/projects/01787a70-ed5e-47d1-adbf-a9ba119d1d70/bucket/4f94f4d1-1d54-4dea-8d5e-5bc6604edadd.jpg"
+          alt=""
+          className="h-full w-full object-cover object-left"
+        />
+        <div className="absolute inset-0 bg-white/30" />
       </div>
 
       <nav
@@ -222,7 +171,7 @@ export default function Index() {
           <img
             src="https://cdn.poehali.dev/projects/01787a70-ed5e-47d1-adbf-a9ba119d1d70/bucket/3708482a-a3c0-4832-af00-03eb3b63908e.png"
             alt="Аддэре винум"
-            className="h-12 w-12 object-contain drop-shadow-md"
+            className="h-20 w-20 object-contain drop-shadow-md"
           />
         </button>
 
