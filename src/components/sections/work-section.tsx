@@ -39,7 +39,7 @@ export function WorkSection() {
             {
               number: "03",
               title: "Ресторанный диспенсер",
-              category: "Розлив без пробки · НИОКР",
+              category: "Розлив без извлечения пробки · НИОКР",
               year: "2026",
               direction: "left",
             },
