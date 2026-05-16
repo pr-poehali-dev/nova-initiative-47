@@ -15,31 +15,31 @@ export function ServicesSection() {
           }`}
         >
           <h2 className="mb-2 font-sans text-5xl font-light tracking-tight text-foreground md:text-6xl lg:text-7xl">
-            Услуги
+            Продукты
           </h2>
-          <p className="font-mono text-sm text-foreground/60 md:text-base">/ Наши компетенции</p>
+          <p className="font-mono text-sm text-foreground/60 md:text-base">/ Наши решения</p>
         </div>
 
         <div className="grid gap-8 md:grid-cols-2 md:gap-x-16 md:gap-y-12 lg:gap-x-24">
           {[
             {
-              title: "Веб-разработка",
-              description: "Создание современных веб-приложений любой сложности",
+              title: "Многоразовые баллоны Coravin",
+              description: "Экономичная и экологичная альтернатива оригинальным картриджам. Полная совместимость с уже используемым оборудованием Coravin.",
               direction: "top",
             },
             {
-              title: "UI/UX Дизайн",
-              description: "Проектирование удобных и красивых интерфейсов",
+              title: "Собственная система сохранения",
+              description: "Аналог Coravin с акцентом на снижение эксплуатационных затрат, повышенную надёжность и удобство — включая индикатор остатка аргона.",
               direction: "right",
             },
             {
-              title: "Мобильные приложения",
-              description: "Кроссплатформенная разработка для iOS и Android",
+              title: "Ресторанные диспенсеры",
+              description: "Система розлива вина без извлечения пробки для ресторанного сегмента. Направление на стадии НИОКР.",
               direction: "left",
             },
             {
-              title: "Консалтинг",
-              description: "Техническая экспертиза и стратегическое планирование",
+              title: "Для HoReCa и сомелье",
+              description: "Все решения разработаны под требования пищевой индустрии, профессиональных сомелье и ценителей вина.",
               direction: "bottom",
             },
           ].map((service, i) => (
