@@ -18,7 +18,7 @@ export function AboutSection({ scrollToSection }: { scrollToSection?: (index: nu
                 isVisible ? "translate-y-0 opacity-100" : "-translate-y-12 opacity-0"
               }`}
             >
-              <h2 className="mb-3 font-sans text-3xl font-light leading-[1.1] tracking-tight text-foreground md:mb-4 md:text-6xl lg:text-7xl">
+              <h2 className="mb-3 font-sans text-2xl font-light leading-[1.1] tracking-tight text-foreground md:mb-4 md:text-5xl lg:text-6xl">
                 Технологии
                 <br />
                 для мира
@@ -33,10 +33,10 @@ export function AboutSection({ scrollToSection }: { scrollToSection?: (index: nu
               }`}
               style={{ transitionDelay: "200ms" }}
             >
-              <p className="max-w-md text-sm leading-relaxed text-foreground/90 md:text-lg">
+              <p className="max-w-md text-xs leading-relaxed text-foreground/90 md:text-base">
                 ООО «Аддэре винум» — российский разработчик инновационных решений для сохранения и розлива вина. Наша миссия — сделать передовую технологию экономически доступной и экологически устойчивой.
               </p>
-              <p className="max-w-md text-sm leading-relaxed text-foreground/90 md:text-lg">
+              <p className="max-w-md text-xs leading-relaxed text-foreground/90 md:text-base">
                 Отказываясь от дорогостоящих одноразовых расходных материалов, мы предлагаем более надёжные решения со значительно меньшей стоимостью эксплуатации — для HoReCa и профессиональных сомелье.
               </p>
             </div>
@@ -66,9 +66,9 @@ export function AboutSection({ scrollToSection }: { scrollToSection?: (index: nu
                     maxWidth: i % 2 === 0 ? "100%" : "85%",
                   }}
                 >
-                  <div className="text-3xl font-light text-foreground md:text-6xl lg:text-7xl">{stat.value}</div>
+                  <div className="text-2xl font-light text-foreground md:text-5xl lg:text-6xl">{stat.value}</div>
                   <div>
-                    <div className="font-sans text-base font-light text-foreground md:text-xl">{stat.label}</div>
+                    <div className="font-sans text-sm font-light text-foreground md:text-lg">{stat.label}</div>
                     <div className="font-mono text-xs text-foreground/60">{stat.sublabel}</div>
                   </div>
                 </div>
