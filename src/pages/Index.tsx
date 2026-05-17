@@ -171,7 +171,7 @@ export default function Index() {
           <img
             src="https://cdn.poehali.dev/projects/01787a70-ed5e-47d1-adbf-a9ba119d1d70/bucket/3708482a-a3c0-4832-af00-03eb3b63908e.png"
             alt="Аддэре винум"
-            className="h-[100px] w-[100px] object-contain drop-shadow-md md:h-[100px] md:w-[100px]"
+            className="h-[84px] w-[84px] object-contain drop-shadow-md md:h-[84px] md:w-[84px]"
           />
         </button>
 
