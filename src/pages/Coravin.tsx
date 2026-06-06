@@ -38,13 +38,13 @@ const KIT = [
 export default function Coravin() {
   const navigate = useNavigate()
   const [activeImage, setActiveImage] = useState(0)
-  const [formData, setFormData] = useState({ name: "", phone: "", message: "" })
+  const [formData, setFormData] = useState({ name: "", email: "", message: "" })
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [submitSuccess, setSubmitSuccess] = useState(false)
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault()
-    if (!formData.name || !formData.phone) return
+    if (!formData.name || !formData.email) return
     setIsSubmitting(true)
     await fetch("https://functions.poehali.dev/9b828e06-e91f-41d5-8de9-eec75fcf6f29", {
       method: "POST",
@@ -53,7 +53,7 @@ export default function Coravin() {
     })
     setIsSubmitting(false)
     setSubmitSuccess(true)
-    setFormData({ name: "", phone: "", message: "" })
+    setFormData({ name: "", email: "", message: "" })
     setTimeout(() => setSubmitSuccess(false), 5000)
   }
 
@@ -206,13 +206,13 @@ export default function Coravin() {
                 />
               </div>
               <div>
-                <label className="mb-2 block font-mono text-xs text-foreground/60">Телефон или Email</label>
+                <label className="mb-2 block font-mono text-xs text-foreground/60">Email</label>
                 <input
-                  type="text"
+                  type="email"
                   required
-                  value={formData.phone}
-                  onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                  placeholder="+7 900 000 00 00"
+                  value={formData.email}
+                  onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                  placeholder="your@email.com"
                   className="w-full border-b border-foreground/30 bg-transparent py-2 text-sm text-foreground placeholder:text-foreground/40 focus:border-foreground/60 focus:outline-none"
                 />
               </div>
