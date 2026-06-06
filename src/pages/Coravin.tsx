@@ -93,7 +93,7 @@ export default function Coravin() {
               <img
                 src={IMAGES[activeImage].src}
                 alt={IMAGES[activeImage].alt}
-                className="h-full w-full object-contain p-8 transition-opacity duration-500"
+                className="h-full w-full object-cover transition-opacity duration-500"
               />
             </div>
             <div className="flex gap-3">
@@ -105,7 +105,7 @@ export default function Coravin() {
                     activeImage === i ? "border-foreground/50" : "border-transparent opacity-50 hover:opacity-75"
                   }`}
                 >
-                  <img src={img.src} alt={img.alt} className="h-full w-full object-contain p-2" />
+                  <img src={img.src} alt={img.alt} className="h-full w-full object-cover" />
                 </button>
               ))}
             </div>
