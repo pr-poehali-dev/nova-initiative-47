@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom"
 import { useReveal } from "@/hooks/use-reveal"
 
 export function WorkSection() {
@@ -28,6 +29,7 @@ export function WorkSection() {
               category: "Многоразовые картриджи · В продаже",
               year: "2025",
               direction: "left",
+              href: "/coravin",
             },
             {
               number: "02",
@@ -35,6 +37,7 @@ export function WorkSection() {
               category: "Собственное устройство · Прототип",
               year: "2026",
               direction: "right",
+              href: null,
             },
             {
               number: "03",
@@ -42,6 +45,7 @@ export function WorkSection() {
               category: "Розлив без извлечения пробки · НИОКР",
               year: "2026",
               direction: "left",
+              href: null,
             },
           ].map((project, i) => (
             <ProjectCard key={i} project={project} index={i} isVisible={isVisible} />
@@ -57,10 +61,12 @@ function ProjectCard({
   index,
   isVisible,
 }: {
-  project: { number: string; title: string; category: string; year: string; direction: string }
+  project: { number: string; title: string; category: string; year: string; direction: string; href: string | null }
   index: number
   isVisible: boolean
 }) {
+  const navigate = useNavigate()
+
   const getRevealClass = () => {
     if (!isVisible) {
       return project.direction === "left" ? "-translate-x-16 opacity-0" : "translate-x-16 opacity-0"
@@ -70,7 +76,8 @@ function ProjectCard({
 
   return (
     <div
-      className={`group flex items-center justify-between border-b border-foreground/10 py-3 transition-all duration-700 hover:border-foreground/20 md:py-4 ${getRevealClass()}`}
+      onClick={() => project.href && navigate(project.href)}
+      className={`group flex items-center justify-between border-b border-foreground/10 py-3 transition-all duration-700 hover:border-foreground/20 md:py-4 ${getRevealClass()} ${project.href ? "cursor-pointer" : ""}`}
       style={{
         transitionDelay: `${index * 150}ms`,
         marginLeft: index % 2 === 0 ? "0" : "auto",
@@ -88,7 +95,12 @@ function ProjectCard({
           <p className="font-mono text-xs text-foreground/50 md:text-sm">{project.category}</p>
         </div>
       </div>
-      <span className="font-mono text-xs text-foreground/30 md:text-sm">{project.year}</span>
+      <div className="flex items-center gap-3">
+        <span className="font-mono text-xs text-foreground/30 md:text-sm">{project.year}</span>
+        {project.href && (
+          <span className="font-mono text-xs text-foreground/30 transition-all duration-300 group-hover:translate-x-1 group-hover:text-foreground/60">→</span>
+        )}
+      </div>
     </div>
   )
 }
