@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom"
 import { useReveal } from "@/hooks/use-reveal"
 
 export function ServicesSection() {
@@ -26,6 +27,7 @@ export function ServicesSection() {
               title: "Многоразовые баллоны Coravin",
               description: "Экономичная и экологичная альтернатива оригинальным картриджам. Полная совместимость с уже используемым оборудованием Coravin.",
               direction: "top",
+              href: "/coravin",
             },
           ].map((service, i) => (
             <ServiceCard key={i} service={service} index={i} isVisible={isVisible} />
@@ -49,10 +51,12 @@ function ServiceCard({
   index,
   isVisible,
 }: {
-  service: { title: string; description: string; direction: string }
+  service: { title: string; description: string; direction: string; href?: string }
   index: number
   isVisible: boolean
 }) {
+  const navigate = useNavigate()
+
   const getRevealClass = () => {
     if (!isVisible) {
       switch (service.direction) {
@@ -73,16 +77,18 @@ function ServiceCard({
 
   return (
     <div
-      className={`group transition-all duration-700 ${getRevealClass()}`}
-      style={{
-        transitionDelay: `${index * 150}ms`,
-      }}
+      onClick={() => service.href && navigate(service.href)}
+      className={`group transition-all duration-700 ${getRevealClass()} ${service.href ? "cursor-pointer" : ""}`}
+      style={{ transitionDelay: `${index * 150}ms` }}
     >
       <div className="mb-3 flex items-center gap-3">
         <div className="h-px w-8 bg-foreground/30 transition-all duration-300 group-hover:w-12 group-hover:bg-foreground/50" />
         <span className="font-mono text-xs text-foreground/60">0{index + 1}</span>
       </div>
-      <h3 className="mb-2 font-sans text-xl font-light text-foreground md:text-2xl">{service.title}</h3>
+      <h3 className="mb-2 font-sans text-xl font-light text-foreground transition-colors duration-300 group-hover:text-foreground/70 md:text-2xl">
+        {service.title}
+        {service.href && <span className="ml-2 opacity-0 transition-all duration-300 group-hover:opacity-60">→</span>}
+      </h3>
       <p className="max-w-sm text-xs leading-relaxed text-foreground/80 md:text-sm">{service.description}</p>
     </div>
   )

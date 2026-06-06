@@ -7,19 +7,19 @@ import Icon from "@/components/ui/icon"
 
 const IMAGES = [
   {
-    src: "https://cdn.poehali.dev/projects/01787a70-ed5e-47d1-adbf-a9ba119d1d70/bucket/coravin/photo1-nobg.png",
+    src: "https://cdn.poehali.dev/projects/01787a70-ed5e-47d1-adbf-a9ba119d1d70/bucket/f676e7e7-d330-4909-87b0-9102eac43ae7.png",
     alt: "Устройство Coravin",
   },
   {
-    src: "https://cdn.poehali.dev/projects/01787a70-ed5e-47d1-adbf-a9ba119d1d70/bucket/coravin/photo2-nobg.png",
+    src: "https://cdn.poehali.dev/projects/01787a70-ed5e-47d1-adbf-a9ba119d1d70/bucket/05d789b1-6897-4cc9-a5db-4c449d35cc33.png",
     alt: "Многоразовый баллон с манометром",
   },
   {
-    src: "https://cdn.poehali.dev/projects/01787a70-ed5e-47d1-adbf-a9ba119d1d70/bucket/coravin/photo3-nobg.png",
+    src: "https://cdn.poehali.dev/projects/01787a70-ed5e-47d1-adbf-a9ba119d1d70/bucket/599a737d-a074-4d84-ac93-1426e0caef78.png",
     alt: "Многоразовый баллон — вид сбоку",
   },
   {
-    src: "https://cdn.poehali.dev/projects/01787a70-ed5e-47d1-adbf-a9ba119d1d70/bucket/coravin/photo4-nobg.png",
+    src: "https://cdn.poehali.dev/projects/01787a70-ed5e-47d1-adbf-a9ba119d1d70/bucket/48c9ab2f-230f-4489-88e3-2c3e433c1933.png",
     alt: "Механизм зарядки баллона аргона",
   },
 ]
