@@ -7,15 +7,19 @@ import Icon from "@/components/ui/icon"
 
 const IMAGES = [
   {
-    src: "https://cdn.poehali.dev/projects/01787a70-ed5e-47d1-adbf-a9ba119d1d70/files/1a4ee9ee-3b18-4151-9c8d-b018a6220a9f.jpg",
+    src: "https://cdn.poehali.dev/projects/01787a70-ed5e-47d1-adbf-a9ba119d1d70/bucket/coravin/photo1-nobg.png",
     alt: "Устройство Coravin",
   },
   {
-    src: "https://cdn.poehali.dev/projects/01787a70-ed5e-47d1-adbf-a9ba119d1d70/files/f1a552a0-2b82-408c-9e49-8588b676dbe8.jpg",
+    src: "https://cdn.poehali.dev/projects/01787a70-ed5e-47d1-adbf-a9ba119d1d70/bucket/coravin/photo2-nobg.png",
     alt: "Многоразовый баллон с манометром",
   },
   {
-    src: "https://cdn.poehali.dev/projects/01787a70-ed5e-47d1-adbf-a9ba119d1d70/files/7a28e8ed-df7a-4e71-b854-dc1091cb45fb.jpg",
+    src: "https://cdn.poehali.dev/projects/01787a70-ed5e-47d1-adbf-a9ba119d1d70/bucket/coravin/photo3-nobg.png",
+    alt: "Многоразовый баллон — вид сбоку",
+  },
+  {
+    src: "https://cdn.poehali.dev/projects/01787a70-ed5e-47d1-adbf-a9ba119d1d70/bucket/coravin/photo4-nobg.png",
     alt: "Механизм зарядки баллона аргона",
   },
 ]
