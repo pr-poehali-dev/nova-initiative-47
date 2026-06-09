@@ -33,7 +33,11 @@ const KIT = [
   "Механизм зарядки для баллонов аргона с присоединением G 3/4",
 ]
 
-export function ServicesSection() {
+interface ServicesSectionProps {
+  onExpandChange?: (expanded: boolean) => void
+}
+
+export function ServicesSection({ onExpandChange }: ServicesSectionProps) {
   const { ref, isVisible } = useReveal(0.3)
   const [isOpen, setIsOpen] = useState(false)
   const [activeImage, setActiveImage] = useState(0)
@@ -59,8 +63,8 @@ export function ServicesSection() {
   return (
     <section
       ref={ref}
-      className="relative flex w-screen shrink-0 snap-start flex-col justify-start overflow-y-auto px-6 pb-24 pt-28 md:px-12 md:pt-32 lg:px-16"
-      style={{ minHeight: "100dvh" }}
+      className="relative flex w-screen shrink-0 snap-start flex-col justify-start px-6 pb-24 pt-28 md:px-12 md:pt-32 lg:px-16"
+      style={{ minHeight: "100vh" }}
     >
       <div className="absolute inset-0 bg-background/95 backdrop-blur-sm" />
       <div className="relative mx-auto w-full max-w-7xl">
@@ -83,7 +87,11 @@ export function ServicesSection() {
         >
           {/* Card header — click to open */}
           <button
-            onClick={() => setIsOpen((v) => !v)}
+            onClick={() => {
+              const next = !isOpen
+              setIsOpen(next)
+              onExpandChange?.(next)
+            }}
             className="group flex w-full items-center justify-between border-t border-foreground/10 py-6 text-left transition-colors hover:border-foreground/30"
           >
             <div className="flex items-center gap-6">

@@ -14,6 +14,7 @@ export default function Index() {
   const touchStartY = useRef(0)
   const touchStartX = useRef(0)
   const scrollThrottleRef = useRef<number>()
+  const [productExpanded, setProductExpanded] = useState(false)
 
   useEffect(() => {
     const timer = setTimeout(() => setIsLoaded(true), 200)
@@ -202,7 +203,7 @@ export default function Index() {
       <div
         ref={scrollContainerRef}
         data-scroll-container
-        className={`relative z-10 flex h-screen overflow-x-auto overflow-y-hidden transition-opacity duration-700 ${
+        className={`relative z-10 flex h-screen overflow-x-auto transition-opacity duration-700 ${productExpanded ? "overflow-y-auto" : "overflow-y-hidden"} ${
           isLoaded ? "opacity-100" : "opacity-0"
         }`}
         style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
@@ -258,7 +259,7 @@ export default function Index() {
         </section>
 
         <WorkSection />
-        <ServicesSection />
+        <ServicesSection onExpandChange={setProductExpanded} />
         <AboutSection scrollToSection={scrollToSection} />
         <ContactSection />
       </div>
