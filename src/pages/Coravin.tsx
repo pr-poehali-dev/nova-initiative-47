@@ -227,7 +227,7 @@ export default function Coravin() {
                 />
               </div>
               <div className="pt-2">
-                <MagneticButton variant="primary" size="lg" className="w-full disabled:opacity-50">
+                <MagneticButton type="submit" variant="primary" size="lg" disabled={isSubmitting} className="w-full disabled:opacity-50">
                   {isSubmitting ? "Отправка..." : "Оставить заявку"}
                 </MagneticButton>
                 {submitSuccess && (
