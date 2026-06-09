@@ -59,7 +59,8 @@ export function ServicesSection() {
   return (
     <section
       ref={ref}
-      className="relative flex min-h-screen w-screen shrink-0 snap-start flex-col justify-center px-6 pt-24 md:px-12 md:pt-24 lg:px-16"
+      className="relative flex w-screen shrink-0 snap-start flex-col justify-start overflow-y-auto px-6 pb-24 pt-28 md:px-12 md:pt-32 lg:px-16"
+      style={{ minHeight: "100dvh" }}
     >
       <div className="absolute inset-0 bg-background/95 backdrop-blur-sm" />
       <div className="relative mx-auto w-full max-w-7xl">
