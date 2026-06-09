@@ -55,7 +55,7 @@ export function ServicesSection() {
       ref={ref}
       className="relative flex h-screen w-screen shrink-0 snap-start items-center px-6 pt-32 md:px-12 md:pt-36 lg:px-16"
     >
-      <div className="absolute inset-0 bg-background" />
+      <div className="absolute inset-0 bg-background/70 backdrop-blur-sm" />
       <div className="relative mx-auto w-full max-w-7xl">
 
         {/* Header */}
