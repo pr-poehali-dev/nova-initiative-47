@@ -53,7 +53,7 @@ export function ServicesSection() {
   return (
     <section
       ref={ref}
-      className="relative flex min-h-screen w-screen shrink-0 snap-start flex-col justify-center px-6 py-24 md:px-12 lg:px-16"
+      className="relative flex h-screen w-screen shrink-0 snap-start items-center px-6 pt-32 md:px-12 md:pt-36 lg:px-16"
     >
       <div className="absolute inset-0 bg-background" />
       <div className="relative mx-auto w-full max-w-7xl">
