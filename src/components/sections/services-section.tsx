@@ -59,9 +59,10 @@ export function ServicesSection() {
   return (
     <section
       ref={ref}
-      className="flex min-h-screen w-screen shrink-0 snap-start flex-col justify-center px-6 pt-24 md:px-12 md:pt-24 lg:px-16"
+      className="relative flex min-h-screen w-screen shrink-0 snap-start flex-col justify-center px-6 pt-24 md:px-12 md:pt-24 lg:px-16"
     >
-      <div className="mx-auto w-full max-w-7xl">
+      <div className="absolute inset-0 bg-background/95 backdrop-blur-sm" />
+      <div className="relative mx-auto w-full max-w-7xl">
         <div
           className={`mb-12 transition-all duration-700 md:mb-16 ${
             isVisible ? "translate-y-0 opacity-100" : "-translate-y-12 opacity-0"
