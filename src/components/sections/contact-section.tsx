@@ -148,10 +148,8 @@ export function ContactSection() {
                 style={{ transitionDelay: "650ms" }}
               >
                 <MagneticButton
-                  type="submit"
                   variant="primary"
                   size="lg"
-                  disabled={isSubmitting}
                   className="w-full disabled:opacity-50"
                 >
                   {isSubmitting ? "Отправка..." : "Отправить"}
