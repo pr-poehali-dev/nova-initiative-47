@@ -1,5 +1,6 @@
 import { useEffect } from "react"
 import { useNavigate } from "react-router-dom"
+import { CustomCursor } from "@/components/custom-cursor"
 
 export default function Cartridge() {
   const navigate = useNavigate()
@@ -12,6 +13,7 @@ export default function Cartridge() {
 
   return (
     <div className="min-h-screen bg-background text-foreground">
+      <CustomCursor />
       <div className="mx-auto max-w-3xl px-6 py-20 md:px-12 md:py-28">
 
         {/* Breadcrumb */}
