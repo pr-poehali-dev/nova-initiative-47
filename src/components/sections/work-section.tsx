@@ -29,7 +29,7 @@ export function WorkSection() {
               category: "Многоразовые картриджи · В продаже",
               year: "2025",
               direction: "left",
-              href: "/coravin",
+              href: "/cartridge",
             },
             {
               number: "02",
