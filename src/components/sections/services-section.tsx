@@ -5,11 +5,11 @@ import Icon from "@/components/ui/icon"
 
 const IMAGES = [
   {
-    src: "/images/coravin-device.jpg",
+    src: "/images/coravin-device.png",
     alt: "Устройство Coravin",
   },
   {
-    src: "/images/gauge.jpg",
+    src: "/images/gauge.png",
     alt: "Многоразовый баллон с манометром",
   },
   {
@@ -17,7 +17,7 @@ const IMAGES = [
     alt: "Многоразовый баллон — вид сбоку",
   },
   {
-    src: "/images/charging-mechanism.jpg",
+    src: "/images/charging-mechanism.png",
     alt: "Механизм зарядки баллона аргона",
   },
 ]
