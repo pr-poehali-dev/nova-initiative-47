@@ -5,7 +5,7 @@ import Icon from "@/components/ui/icon"
 
 const IMAGES = [
   {
-    src: "https://cdn.poehali.dev/projects/01787a70-ed5e-47d1-adbf-a9ba119d1d70/bucket/f676e7e7-d330-4909-87b0-9102eac43ae7.png",
+    src: "/images/coravin-device.jpg",
     alt: "Устройство Coravin",
   },
   {
