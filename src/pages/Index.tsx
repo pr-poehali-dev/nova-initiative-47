@@ -170,7 +170,7 @@ export default function Index() {
           className="flex items-center gap-2 transition-transform hover:scale-105"
         >
           <img
-            src="https://cdn.poehali.dev/projects/01787a70-ed5e-47d1-adbf-a9ba119d1d70/bucket/3708482a-a3c0-4832-af00-03eb3b63908e.png"
+            src="/images/logo.png"
             alt="Аддэре винум"
             className="h-[84px] w-[84px] object-contain drop-shadow-md md:h-[84px] md:w-[84px]"
           />
