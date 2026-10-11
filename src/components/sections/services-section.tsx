@@ -13,7 +13,7 @@ const IMAGES = [
     alt: "Многоразовый баллон с манометром",
   },
   {
-    src: "https://cdn.poehali.dev/projects/01787a70-ed5e-47d1-adbf-a9ba119d1d70/bucket/599a737d-a074-4d84-ac93-1426e0caef78.png",
+    src: "/images/cartridge-side.png",
     alt: "Многоразовый баллон — вид сбоку",
   },
   {
