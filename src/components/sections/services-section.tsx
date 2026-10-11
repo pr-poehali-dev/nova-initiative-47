@@ -9,7 +9,7 @@ const IMAGES = [
     alt: "Устройство Coravin",
   },
   {
-    src: "https://cdn.poehali.dev/projects/01787a70-ed5e-47d1-adbf-a9ba119d1d70/bucket/05d789b1-6897-4cc9-a5db-4c449d35cc33.png",
+    src: "/images/gauge.jpg",
     alt: "Многоразовый баллон с манометром",
   },
   {
