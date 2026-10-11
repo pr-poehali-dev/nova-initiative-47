@@ -17,7 +17,7 @@ const IMAGES = [
     alt: "Многоразовый баллон — вид сбоку",
   },
   {
-    src: "https://cdn.poehali.dev/projects/01787a70-ed5e-47d1-adbf-a9ba119d1d70/bucket/48c9ab2f-230f-4489-88e3-2c3e433c1933.png",
+    src: "/images/charging-mechanism.jpg",
     alt: "Механизм зарядки баллона аргона",
   },
 ]
