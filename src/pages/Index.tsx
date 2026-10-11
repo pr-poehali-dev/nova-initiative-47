@@ -153,7 +153,7 @@ export default function Index() {
         className={`fixed inset-0 z-0 transition-opacity duration-700 ${isLoaded ? "opacity-100" : "opacity-0"}`}
       >
         <img
-          src="https://cdn.poehali.dev/projects/01787a70-ed5e-47d1-adbf-a9ba119d1d70/bucket/4f94f4d1-1d54-4dea-8d5e-5bc6604edadd.jpg"
+          src="/images/hero-bg.jpg"
           alt=""
           className="h-full w-full object-cover object-left"
         />
